@@ -46,7 +46,9 @@
       <h3 class="icon icon-info"><%= t 'redmine_custom_fields_project_overview.project_information' %></h3>
           <table>
           <% render_custom_field_values(@project) do |custom_field, formatted| %>
-            <tr><td class="project-custom-field-table-th"><span class="label"><%= custom_field.name %>:</span></td><td><%= formatted %></td></tr>
+            <% unless custom_field.name == 'Project Default Module' %>
+              <tr><td class="project-custom-field-table-th"><span class="label"><%= custom_field.name %>:</span></td><td><%= formatted %></td></tr>
+            <% end %>
           <% end %>
           </table>
     </div>
