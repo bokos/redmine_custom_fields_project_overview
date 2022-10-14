@@ -1,0 +1,4 @@
+# English strings go here for Rails i18n
+en:
+  redmine_custom_fields_project_overview:
+    project_information: "Project Information"

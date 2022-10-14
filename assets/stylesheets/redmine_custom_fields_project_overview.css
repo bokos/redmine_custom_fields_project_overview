@@ -1,0 +1,9 @@
+.project-custom-field-table-th {
+  text-align:right;
+  font-weight:700;
+  vertical-align: top;
+}
+.icon-info {
+  background-image: url(../images/information-mark-circle-outline-icon.png) !important;
+  background-size: 16px;
+}
